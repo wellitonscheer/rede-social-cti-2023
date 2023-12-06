@@ -1,0 +1,20 @@
+{
+  "name": "manage-firebase",
+  "version": "1.0.0",
+  "main": "./index.tsx",
+  "types": "./index.tsx",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "lint": "next lint"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^13.4.19",
+    "eslint-config-custom": "workspace:*",
+    "tsconfig": "workspace:*",
+    "typescript": "^4.5.3"
+  },
+  "dependencies": {
+    "firebase": "^10.6.0"
+  }
+}
