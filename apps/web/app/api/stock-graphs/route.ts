@@ -11,20 +11,27 @@ const API_KEY = "SEXof8YvEh4ahddwkGLAb8c6IE11DdY2vJAsRhs3";
 
 export async function GET(_: Request) {
   try {
-    const symbols = ["BINANCE:BTCUSDT", "BCS:SQM_B", "BINGX:BTCUSDT"];
+    // const symbols = ["BINANCE:BTCUSDT", "BCS:SQM_B", "BINGX:BTCUSDT"];
 
-    /*const stocks: StockGraph[] = await Promise.all(symbols.map(async (symbol) => {
-      const res = await fetch(`https://api.chart-img.com/v1/tradingview/mini-chart/storage?interval=1D&symbol=${symbol}`, {
-        headers: {
-          Authorization: `Bearer ${API_KEY}`,
-          'Content-Type': 'application/json',
-        },
-      })
-      const stock: StockGraph = await res.json()
-      console.log("stock", stock);
-      return stock
-    }))
-    console.log("all", stocks)*/
+    // const stocks: StockGraph[] = await Promise.all(
+    //   symbols.map(async (symbol) => {
+    //     const res = await fetch(
+    //       `https://api.chart-img.com/v1/tradingview/mini-chart/storage?interval=1D&symbol=${symbol}`,
+    //       {
+    //         headers: {
+    //           Authorization: `Bearer ${API_KEY}`,
+    //           "Content-Type": "application/json",
+    //         },
+    //       },
+    //     );
+    //     const stock: StockGraph = await res.json();
+    //     console.log("stock", stock);
+    //     return stock;
+    //   }),
+    // );
+    // console.log("all", stocks);
+
+    // return Response.json({ stocks: stocks });
 
     return Response.json({
       stocks: [

@@ -23,7 +23,7 @@ const StockGraphs = () => {
           },
         });
         const stock: { stocks: StockGraph[] } = await res.json();
-        console.log(stock.stocks);
+
         setStocks(stock.stocks);
       } catch (e) {
         console.log("error", e);
@@ -35,7 +35,14 @@ const StockGraphs = () => {
   return (
     <div className="flex flex-row">
       {stocks?.map((stock, ind) =>
-        stock.url ? <img alt={`${ind}`} src={stock.url} /> : null,
+        stock.url ? (
+          <img
+            key={ind}
+            className="pl-4 rounded-lg overflow-hidden"
+            alt={`${ind}`}
+            src={stock.url}
+          />
+        ) : null,
       )}
     </div>
   );
