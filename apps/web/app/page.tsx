@@ -1,13 +1,13 @@
-"use client"
+"use client";
 
-import { Fragment, useState } from "react";
 import StockGraphs from "./components/StockGraphs";
+import PostsList from "./components/PostList";
 
 const Logout = () => {
-  const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="flex justify-center items-center text-white">
-      <StockGraphs/>
+    <div className="flex justify-center items-center flex-col">
+      <StockGraphs />
+      <PostsList />
     </div>
   );
 };
